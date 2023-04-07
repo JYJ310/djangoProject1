@@ -69,7 +69,7 @@
         <div style="display: flex">
             <span class="material-symbols-outlined" style="padding-right: 10px">home</span>
             <span class="material-symbols-outlined">send</span>
-            <span id="nav_var_add_box" class="material-symbols-outlined" style="padding-right: 10px">add_box</span>
+            <span id="nav_bar_add_box" class="material-symbols-outlined" style="padding-right: 10px">add_box</span>
             <span class="material-symbols-outlined">explore</span>
             <span class="material-symbols-outlined">favorite</span>
         </div>
@@ -124,7 +124,6 @@
         {% endfor %}
 
     </div>
-    <!-- 여기까지 피드박스 -->
     <!-- 팔로우 추천 -->
     <div style="width: 400px; height: 1000px; position: fixed;left: 62%">
         <div style="display: flex;flex-direction: row; align-items: center; margin: 20px">
@@ -313,7 +312,7 @@
 <!-- Optional JS; -->
 <script>
 
-    $('#nav_var_add_box').click(function () {
+    $('#nav_bar_add_box').click(function () {
         $('#first_modal').css({
             display: 'flex'
         });
