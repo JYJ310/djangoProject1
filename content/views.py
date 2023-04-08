@@ -10,3 +10,4 @@ class Main(APIView):
 
 
         return render(request, 'star/main.html', context=dict(feeds=feed_list))
+
