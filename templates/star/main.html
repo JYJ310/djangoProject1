@@ -63,8 +63,8 @@
 <body>
 <nav class="navbar navbar-expand-lg bg-light" style="position: fixed;width: 100%; z-index: 999">
     <div class="container-fluid" style="justify-content: space-between;flex-wrap: nowrap; min-width: 1000px">
-        <a class="navbar-brand" href="main"><img style="width:100px;"
-                                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjtjBw4xwF01ZdKL1cmnYZD3vdavlQPOWA7w&usqp=CAU">
+        <a class="navbar_logo" href="#"><img style="width: 100px"
+                                             src="https://postfiles.pstatic.net/MjAyMzA0MDJfMjg2/MDAxNjgwNDIzNjk3ODAy.ZI7uM4QmLKs-KeALJ8LcUl2x9LnJ1Sd2WV-4P_8bI1cg.IBIosSfIcz-cwb4zg7t4LDWdSRJztgSX2skoCOGk3j8g.PNG.roedeer0807/mainLogo_removebg.png?type=w966">
         </a>
         <input class="form-control me-2" style="width: 400px" type="search" placeholder="Search" aria-label="Search">
         <div style="display: flex">
@@ -77,7 +77,6 @@
 
     </div>
 </nav>
-
 
 <div style="display: flex; flex-direction: row;text-align: center; justify-content: center;padding-top: 60px; background-color:#FAFAFA">
     <!-- 피드박스 -->
@@ -257,6 +256,7 @@
     </div>
     <!-- 여기까지 팔로우 추천 -->
 </div>
+
 {# 첫 번째 모달 #}
 <div id="first_modal" class="modal_overlay">
     <div class="modal_window">
@@ -323,7 +323,6 @@
     });
 
     $('#feed_create_button').click(function () {
-        alert("공유하기 누름");
 
         let file = files[0];
         let image =files[0].name;

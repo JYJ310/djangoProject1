@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7246699-45a4-4ae6-8cfe-cd46da106931" name="Changes" comment="2023-04-09">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4bcec2e9-6533-49ea-a293-4aed3e80d412.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4bcec2e9-6533-49ea-a293-4aed3e80d412.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8279cc7d-82c7-4bf7-b1ca-db9429b62fbe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8279cc7d-82c7-4bf7-b1ca-db9429b62fbe.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/djangoProject1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/djangoProject1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject1/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProject1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject1/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/star/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/star/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/join.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/join.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +64,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/user/PycharmProjects/SNS-Team-Project",
     "node.js.detected.package.eslint": "true",
@@ -136,7 +140,10 @@
       <workItem from="1680830145606" duration="334000" />
       <workItem from="1680837778278" duration="7017000" />
       <workItem from="1680959684085" duration="5124000" />
-      <workItem from="1681026628948" duration="6746000" />
+      <workItem from="1681026628948" duration="8848000" />
+      <workItem from="1681100335156" duration="606000" />
+      <workItem from="1681104926331" duration="911000" />
+      <workItem from="1681187959304" duration="5720000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1680825807570</created>
@@ -173,7 +180,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681031119029</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2023-04-09">
+      <created>1681038691892</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681038691892</updated>
+    </task>
+    <task id="LOCAL-00007" summary="2023-04-09">
+      <created>1681038701041</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681038701041</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
