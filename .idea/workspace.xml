@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7246699-45a4-4ae6-8cfe-cd46da106931" name="Changes" comment="2023-04-09">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/djangoProject1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/djangoProject1.iml" afterDir="false" />
+    <list default="true" id="d7246699-45a4-4ae6-8cfe-cd46da106931" name="Changes" comment="2023-04-11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject1/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/star/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/star/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/join.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/join.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +137,7 @@
       <workItem from="1681026628948" duration="8848000" />
       <workItem from="1681100335156" duration="606000" />
       <workItem from="1681104926331" duration="911000" />
-      <workItem from="1681187959304" duration="5720000" />
+      <workItem from="1681187959304" duration="6962000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1680825807570</created>
@@ -194,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681038701041</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="2023-04-11">
+      <created>1681220948349</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681220948349</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +216,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="2023-04-08" />
     <MESSAGE value="2023-04-09" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023-04-09" />
+    <MESSAGE value="2023-04-11" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023-04-11" />
   </component>
 </project>
