@@ -71,16 +71,16 @@
 <nav class="navbar navbar-expand-lg bg-light" style="position: fixed;width: 100%; z-index: 999">
     <div class="container-fluid" style="justify-content: space-between;flex-wrap: nowrap; min-width: 1000px">
         <a class="navbar_logo" href="/main"><img style="width: 100px"
-                                             src="https://postfiles.pstatic.net/MjAyMzA0MDJfMjg2/MDAxNjgwNDIzNjk3ODAy.ZI7uM4QmLKs-KeALJ8LcUl2x9LnJ1Sd2WV-4P_8bI1cg.IBIosSfIcz-cwb4zg7t4LDWdSRJztgSX2skoCOGk3j8g.PNG.roedeer0807/mainLogo_removebg.png?type=w966">
+                                                 src="https://postfiles.pstatic.net/MjAyMzA0MDJfMjg2/MDAxNjgwNDIzNjk3ODAy.ZI7uM4QmLKs-KeALJ8LcUl2x9LnJ1Sd2WV-4P_8bI1cg.IBIosSfIcz-cwb4zg7t4LDWdSRJztgSX2skoCOGk3j8g.PNG.roedeer0807/mainLogo_removebg.png?type=w966">
         </a>
         <input class="form-control me-2" style="width: 400px" type="search" placeholder="Search" aria-label="Search">
         <div style="display: flex">
             <a href="/main" style="color: black"><span class="material-symbols-outlined" style="padding-right: 10px">home</span></a>
             <span class="material-symbols-outlined" style="padding-right: 10px">send</span>
-            <a href="#" style="color: black"><span id="nav_bar_add_box" class="material-symbols-outlined" style="padding-right: 10px">add_box</span></a>
+            <a href="#" style="color: black"><span id="nav_bar_add_box" class="material-symbols-outlined"
+                                                   style="padding-right: 10px">add_box</span></a>
             <span class="material-symbols-outlined" style="padding-right: 10px">explore</span>
             <span class="material-symbols-outlined" style="padding-right: 10px">favorite</span>
-
 
             <div class="dropdown">
                 <a id="dropdownMenuLink" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -93,7 +93,9 @@
 
                 <ul class="dropdown-menu" style="left: -158px">
                     <li><a class="dropdown-item" href="/content/profile">프로필</a></li>
-                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
                     <li><a class="dropdown-item" href="/user/logout">로그아웃</a></li>
                 </ul>
             </div>
@@ -122,9 +124,15 @@
                 </div>
                 <div style="margin: 0 20px;display: flex; flex-direction: row; justify-content: space-between">
                     <div>
-                        <span class="material-symbols-outlined">favorite</span>
-                        <span class="material-symbols-outlined">mode_comment</span>
-                        <span class="material-symbols-outlined">send</span>
+                        <div>
+                            <span class="material-symbols-outlined">favorite</span>
+                        </div>
+                        <div>
+                            <span class="material-symbols-outlined">mode_comment</span>
+                        </div>
+                        <div>
+                            <span class="material-symbols-outlined">send</span>
+                        </div>
                     </div>
                     <div>
                         <span class="material-symbols-outlined">bookmark</span>
@@ -135,19 +143,22 @@
                     좋아합니다.
                 </div>
                 <div style="margin: 0 20px;text-align: left;font-size: 16px">
-                    <b>{{ feed.user_id }}</b>{{ feed.content }}
+                    <b>{{ feed.nickname }}</b>{{ feed.content }}
                 </div>
-                {% for reply in feed.reply_list %}
-                    <div style="margin: 0 20px;text-align: left;font-size: 14px">
-                        <b>{{ reply.nickname }}</b>{{ reply.reply_content }}
-                    </div>
-                {% endfor %}
+                <div id="reply_list_{{ feed.id }}">
+                    {% for reply in feed.reply_list %}
+                        <div style="margin: 0 20px;text-align: left;font-size: 14px">
+                            <b>{{ reply.nickname }}</b>{{ reply.reply_content }}
+                        </div>
+                    {% endfor %}
+                </div>
 
                 <div style="display:flex;flex-direction: row;align-items: center; border-top: solid 1px gray ">
                     <input id="reply_{{ feed.id }}" type="text" class="form-control"
                            style="box-shadow: none; border: none; outline: none"
                            placeholder="댓글 달기..">
-                    <div feed_id="{{ feed.id }}" class="upload_reply" style="width: 50px; color: cornflowerblue; font-weight: bold">
+                    <div feed_id="{{ feed.id }}" class="upload_reply"
+                         style="width: 50px; color: cornflowerblue; font-weight: bold">
                         게시
                     </div>
                 </div>
@@ -330,7 +341,8 @@
             </div>
             <div style="border-left: solid 1px gray">
                 <div>
-                    <textarea id="input_feed_content" class="form-control" style="width: 276px; height: 400px" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    <textarea id="input_feed_content" class="form-control" style="width: 276px; height: 400px"
+                              id="exampleFormControlTextarea1" rows="5"></textarea>
                 </div>
                 <button id="feed_create_button" type="button" class="btn btn-primary" style="width: 100%">
                     공유하기
@@ -342,12 +354,12 @@
 
 <!-- Optional JS; -->
 <script>
-    $('.upload_reply').click(function(event) {
+    $('.upload_reply').click(function (event) {
         let feed_id = event.target.attributes.getNamedItem('feed_id').value;
         let reply_id = 'reply_' + feed_id;
-        let reply_content = $('#'+reply_id).val();
+        let reply_content = $('#' + reply_id).val();
 
-        if(reply_content.length<=0){
+        if (reply_content.length <= 0) {
             alert("댓글을 입력하세요.");
             return 0;
         }
@@ -355,24 +367,26 @@
         $.ajax({
             url: "/content/reply",
             data: {
-                feed_id : feed_id,
-                reply_content : reply_content,
+                feed_id: feed_id,
+                reply_content: reply_content,
             },
             method: "POST",
             success: function (data) {
                 console.log(("성공"));
-                location.replace('/main');
+                $("#reply_list_"+feed_id).append("<div style='margin: 0 20px;text-align: left;font-size: 14px'><b>{{ user.nickname }}</b>"+reply_content+" </div>")
+                {#location.replace('/main');#}
             },
             error: function (request, status, error) {
                 console.log("에러");
             },
             complete: function () {
                 console.log("완료");
+                $('#' + reply_id).val('');
             }
         });
     })
 
-    $('.modal_colse').click(function() {
+    $('.modal_colse').click(function () {
         $('#first_modal').css({
             display: 'none'
         });
@@ -396,7 +410,7 @@
         alert("공유하기 누름");
 
         let file = files[0];
-        let image =files[0].name;
+        let image = files[0].name;
         let content = $('#input_feed_content').val();
 
         let fd = new FormData();
