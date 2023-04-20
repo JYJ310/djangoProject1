@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <title>프로필</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            border-radius: 70%;
+            overflow: hidden;
+        }
+
+        .profile {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .feed_box {
+            margin: 20px 0;
+            border: solid 1px gray;
+            background-color: white
+        }
+
+        .modal_overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(1.5px);
+            -webkit-backdrop-filter: blur(1.5px);
+        }
+
+        .modal_window {
+            background: white;
+            backdrop-filter: blur(13.5px);
+            -webkit-backdrop-filter: blur(13.5px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            width: 800px;
+            height: 600px;
+            position: relative;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+{#<div>#}
+{#    {{ user.email }}#}
+{#    {{ user.nickname }}#}
+{#    {{ user.name }}#}
+{#    {{ user.profile_image }}#}
+{#</div>#}
+<body>
+<nav class="navbar navbar-expand-lg bg-light" style="position: fixed;width: 100%; z-index: 999">
+    <div class="container-fluid" style="justify-content: space-between;flex-wrap: nowrap; min-width: 1000px">
+        <a class="navbar_logo" href="#"><img style="width: 100px"
+                                             src="https://postfiles.pstatic.net/MjAyMzA0MDJfMjg2/MDAxNjgwNDIzNjk3ODAy.ZI7uM4QmLKs-KeALJ8LcUl2x9LnJ1Sd2WV-4P_8bI1cg.IBIosSfIcz-cwb4zg7t4LDWdSRJztgSX2skoCOGk3j8g.PNG.roedeer0807/mainLogo_removebg.png?type=w966">
+        </a>
+        <input class="form-control me-2" style="width: 400px" type="search" placeholder="Search" aria-label="Search">
+        <div style="display: flex">
+            <span class="material-symbols-outlined" style="padding-right: 10px">home</span>
+            <span class="material-symbols-outlined" style="padding-right: 10px">send</span>
+            <span id="nav_bar_add_box" class="material-symbols-outlined" style="padding-right: 10px">add_box</span>
+            <span class="material-symbols-outlined" style="padding-right: 10px">explore</span>
+            <span class="material-symbols-outlined" style="padding-right: 10px">favorite</span>
+            <div class="dropdown">
+                <a id="dropdownMenuLink" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="box" style="width: 27px; height: 27px" style="padding-right: 10px">
+                        <img class="profile"
+                             src="data:image/png;base64,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"
+                        >
+                    </div>
+                </a>
+
+                <ul class="dropdown-menu" style="left: -158px">
+                    <li><a class="dropdown-item" href="/content/profile">프로필</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/user/logout">로그아웃</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<div style="display: flex; flex-direction: row;text-align: center; justify-content: center;padding-top: 60px; background-color:#FAFAFA">
+    <div style="padding: 20px 60px">
+        <div class="box" style="width: 175px; height: 175px" style="padding-right: 10px">
+            <img class="profile"
+                 src="data:image/png;base64,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"
+            >
+        </div>
+    </div>
+    <div style="text-align: left">
+        <div style="display: flex; flex-direction: row; margin: 20px 0">
+            <div style="font-size: 26px; margin-right: 40px">
+                {{ user.nickname }}
+            </div>
+            <button id="button_profile_upload" style="margin-right: 40px">프로필 사진 편집</button>
+             <input type="file" id="input_fileupload" style="display:none;" onclick="profile_upload();" />
+            <span class="material-symbols-outlined" style="margin-right: 40px">settings</span>
+        </div>
+
+        <div style="margin-bottom: 20px">
+            게시물 내 게시물건수 팔로워111 팔로잉111
+        </div>
+        <div>
+            <b>{{ user.name }}</b>
+        </div>
+    </div>
+</div>
+{# 첫 번째 모달 #}
+<div id="first_modal" class="modal_overlay">
+    <div class="modal_window">
+        <div style="display: flex; flex-direction: row; justify-content: space-between">
+            <div style="width: 40px; background-color: gray">
+            </div>
+            <div>
+                새 이미지 업로드
+            </div>
+            <div style="width: 40px; background-color: gray">
+                <span class="material-symbols-outlined">close</span>
+            </div>
+        </div>
+
+        <div class="img_upload_space" style="border-top: solid 1px gray; width: 778px; height: 540px; margin-top: 10px">
+
+        </div>
+    </div>
+</div>
+
+{# 두 번째 모달 #}
+<div id="second_modal" class="modal_overlay">
+    <div class="modal_window">
+        <div style="display: flex; flex-direction: row; justify-content: space-between">
+            <div style="width: 40px; background-color: gray">
+
+            </div>
+            <div>
+                새 이미지 업로드
+            </div>
+            <div style="width: 40px; background-color: gray">
+                <span class="material-symbols-outlined">close</span>
+            </div>
+        </div>
+
+        <div style="border-left: solid 1px gray; display: flex; flex-direction: row; margin-top: 10px">
+            <div class="img_upload_space" style="border-top: solid 1px gray; width: 500px; height: 540px">
+
+            </div>
+            <div style="border-left: solid 1px gray">
+                <div>
+                    <textarea id="input_feed_content" class="form-control" style="width: 276px; height: 400px" id="exampleFormControlTextarea1" rows="5"></textarea>
+                </div>
+                <button id="feed_create_button" type="button" class="btn btn-primary" style="width: 100%">
+                    공유하기
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JS; -->
+<script>
+
+    let files;
+
+    $('#nav_bar_add_box').click(function () {
+        $('#first_modal').css({
+            display: 'flex'
+        });
+        $(document.body).css({
+            overflowY: 'hidden'
+        });
+    });
+
+    $('#feed_create_button').click(function () {
+        alert("공유하기 누름");
+
+        let file = files[0];
+        let image =files[0].name;
+        let content = $('#input_feed_content').val();
+        let user_id = "id_3300";
+        let profile_image = "data:image/png;base64,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";
+
+        let fd = new FormData();
+
+        fd.append('file', file);
+        fd.append('image', image);
+        fd.append('content', content);
+        fd.append('user_id', user_id);
+        fd.append('profile_image', profile_image);
+
+        $.ajax({
+            url: "/content/upload",
+            data: fd,
+            method: "POST",
+            processData: false,
+            contentType: false,
+            success: function (data) {
+                console.log(("성공"));
+            },
+            error: function (request, status, error) {
+                console.log("에러");
+            },
+            complete: function () {
+                console.log("완료");
+                location.replace("/main");
+            }
+        });
+    });
+
+    $('.img_upload_space')
+        .on("dragover", dragOver)
+        .on("dragleave", dragOver)
+        .on("drop", uploadFiles);
+
+    function dragOver(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        if (e.type == "dragover") {
+            $(e.target).css({
+                "background-color": "black",
+                "outline-offset": "-20px"
+            });
+        } else {
+            $(e.target).css({
+                "background-color": "gray",
+                "outline-offset": "-10px"
+            });
+        }
+    }
+
+    function uploadFiles(e) {
+        e.stopPropagation();
+        e.preventDefault();
+
+        e.dataTransfer = e.originalEvent.dataTransfer; //2
+        files = e.target.files || e.dataTransfer.files;
+
+        if (files.length > 1) {
+            alert('하나만 올려라.');
+            return;
+        }
+
+        if (files[0].type.match(/image.*/)) {
+            $('#first_modal').css({
+                display: 'none'
+            });
+            $('#second_modal').css({
+                display: 'flex'
+            });
+            $('.img_upload_space').css({
+                "background-image": "url(" + window.URL.createObjectURL(files[0]) + ")",
+                "outline": "none",
+                "background-size": "100%",
+                "background-repeat": "no-repeat",
+                "background-position": "center"
+            });
+        } else {
+            alert('이미지가 아닙니다.');
+            return;
+        }
+
+    }
+
+    $('#button_profile_upload').click(function() {
+        $('#input_fileupload').click();
+    });
+
+    function profile_upload() {
+
+        let file = $('#input_fileupload')[0].files[0];
+
+        let email = "{{ user.email }}";
+
+        let fd = new FormData();
+
+        fd.append('file', file);
+        fd.append('email', email);
+
+        $.ajax({
+            url: "/user/profile/upload",
+            data: fd,
+            method: "POST",
+            processData: false,
+            contentType: false,
+            success: function (data) {
+                console.log(("성공"));
+            },
+            error: function (request, status, error) {
+                console.log("에러");
+            },
+            complete: function () {
+                console.log("완료");
+                location.replace("/content/profile");
+            }
+        });
+    }
+</script>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+-->
+</body>
+
+
+</html>
