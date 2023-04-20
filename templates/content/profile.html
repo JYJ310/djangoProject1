@@ -69,21 +69,21 @@
 <body>
 <nav class="navbar navbar-expand-lg bg-light" style="position: fixed;width: 100%; z-index: 999">
     <div class="container-fluid" style="justify-content: space-between;flex-wrap: nowrap; min-width: 1000px">
-        <a class="navbar_logo" href="#"><img style="width: 100px"
+        <a class="navbar_logo" href="main"><img style="width: 100px"
                                              src="https://postfiles.pstatic.net/MjAyMzA0MDJfMjg2/MDAxNjgwNDIzNjk3ODAy.ZI7uM4QmLKs-KeALJ8LcUl2x9LnJ1Sd2WV-4P_8bI1cg.IBIosSfIcz-cwb4zg7t4LDWdSRJztgSX2skoCOGk3j8g.PNG.roedeer0807/mainLogo_removebg.png?type=w966">
         </a>
         <input class="form-control me-2" style="width: 400px" type="search" placeholder="Search" aria-label="Search">
         <div style="display: flex">
-            <span class="material-symbols-outlined" style="padding-right: 10px">home</span>
+            <a href="/main" style="color: black"><span class="material-symbols-outlined" style="padding-right: 10px">home</span></a>
             <span class="material-symbols-outlined" style="padding-right: 10px">send</span>
-            <span id="nav_bar_add_box" class="material-symbols-outlined" style="padding-right: 10px">add_box</span>
+            <a href="#" style="color: black"><span id="nav_bar_add_box" class="material-symbols-outlined" style="padding-right: 10px">add_box</span></a>
             <span class="material-symbols-outlined" style="padding-right: 10px">explore</span>
             <span class="material-symbols-outlined" style="padding-right: 10px">favorite</span>
             <div class="dropdown">
                 <a id="dropdownMenuLink" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <div class="box" style="width: 27px; height: 27px" style="padding-right: 10px">
                         <img class="profile"
-                             src="data:image/png;base64,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"
+                             src="{% get_media_prefix %}{{ user.profile_image }}"
                         >
                     </div>
                 </a>
@@ -103,7 +103,7 @@
     <div style="padding: 20px 60px">
         <div class="box" style="width: 175px; height: 175px" style="padding-right: 10px">
             <img class="profile"
-                 src="data:image/png;base64,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"
+                 src="{% get_media_prefix %}{{ user.profile_image }}"
             >
         </div>
     </div>
@@ -113,7 +113,7 @@
                 {{ user.nickname }}
             </div>
             <button id="button_profile_upload" style="margin-right: 40px">프로필 사진 편집</button>
-             <input type="file" id="input_fileupload" style="display:none;" onclick="profile_upload();" />
+            <input type="file" id="input_fileupload" style="display:none" onchange="profile_upload();"/>
             <span class="material-symbols-outlined" style="margin-right: 40px">settings</span>
         </div>
 
