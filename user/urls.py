@@ -1,4 +1,3 @@
-
 from django.urls import path
 from .views import Join, Login, LogOut, UploadProfile
 
@@ -8,3 +7,4 @@ urlpatterns = [
     path('logout', LogOut.as_view()),
     path('profile/upload', UploadProfile.as_view())
 ]
+

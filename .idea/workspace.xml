@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7246699-45a4-4ae6-8cfe-cd46da106931" name="Changes" comment="2023-04-11">
+      <change afterPath="$PROJECT_DIR$/media/default_profile.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/content/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/content/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/content/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/star/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/star/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +69,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "settings.editor.selected.configurable": "preferences.editor",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -75,6 +81,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\djangoProject1\media" />
       <recent name="C:\Users\user\PycharmProjects\djangoProject1\templates" />
       <recent name="C:\Users\user\PycharmProjects\djangoProject1\templates\star" />
     </key>
@@ -135,7 +142,13 @@
       <workItem from="1681026628948" duration="8848000" />
       <workItem from="1681100335156" duration="606000" />
       <workItem from="1681104926331" duration="911000" />
-      <workItem from="1681187959304" duration="8792000" />
+      <workItem from="1681187959304" duration="9888000" />
+      <workItem from="1681697364019" duration="7206000" />
+      <workItem from="1681966450083" duration="5516000" />
+      <workItem from="1681975743202" duration="146000" />
+      <workItem from="1681975912837" duration="74000" />
+      <workItem from="1681976005243" duration="85000" />
+      <workItem from="1681976102967" duration="6263000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1680825807570</created>
@@ -200,7 +213,56 @@
       <option name="project" value="LOCAL" />
       <updated>1681222022752</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="2023-04-11">
+      <created>1681223998098</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1681223998098</updated>
+    </task>
+    <task id="LOCAL-00011" summary="2023-04-11">
+      <created>1681979466590</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1681979466590</updated>
+    </task>
+    <task id="LOCAL-00012" summary="2023-04-11">
+      <created>1681979474348</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1681979474348</updated>
+    </task>
+    <task id="LOCAL-00013" summary="2023-04-11">
+      <created>1681979482301</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1681979482301</updated>
+    </task>
+    <task id="LOCAL-00014" summary="2023-04-11">
+      <created>1681979485525</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1681979485525</updated>
+    </task>
+    <task id="LOCAL-00015" summary="2023-04-11">
+      <created>1681979489093</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1681979489093</updated>
+    </task>
+    <task id="LOCAL-00016" summary="2023-04-11">
+      <created>1681979492301</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1681979492301</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
