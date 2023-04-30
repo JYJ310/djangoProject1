@@ -3,13 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% load static %}
-    <title>Astronaut</title>
+    <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link
-            href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-            rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
     <style>
@@ -45,7 +43,6 @@
             background: rgba(0, 0, 0, 0.8);
             backdrop-filter: blur(1.5px);
             -webkit-backdrop-filter: blur(1.5px);
-            z-index: 10000
         }
 
         .modal_window {
@@ -62,49 +59,24 @@
 
     </style>
 </head>
-{#<div>#}
-{#    {{ user.email }}#}
-{#    {{ user.nickname }}#}
-{#    {{ user.name }}#}
-{#    {{ user.profile_image }}#}
-{#</div>#}
 <body>
 <nav class="navbar navbar-expand-lg bg-light" style="position: fixed;width: 100%; z-index: 999">
     <div class="container-fluid" style="justify-content: space-between;flex-wrap: nowrap; min-width: 1000px">
-        <a class="navbar_logo" href="/main"><img style="width: 100px"
-                                                 src="https://postfiles.pstatic.net/MjAyMzA0MDJfMjg2/MDAxNjgwNDIzNjk3ODAy.ZI7uM4QmLKs-KeALJ8LcUl2x9LnJ1Sd2WV-4P_8bI1cg.IBIosSfIcz-cwb4zg7t4LDWdSRJztgSX2skoCOGk3j8g.PNG.roedeer0807/mainLogo_removebg.png?type=w966">
+        <a class="navbar-brand" href="main"><img style="width:100px;"
+                                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjtjBw4xwF01ZdKL1cmnYZD3vdavlQPOWA7w&usqp=CAU">
         </a>
         <input class="form-control me-2" style="width: 400px" type="search" placeholder="Search" aria-label="Search">
         <div style="display: flex">
-            <a href="/main" style="color: black"><span class="material-icons-outlined"
-                                                       style="padding-right: 10px">home</span></a>
-            <span class="material-icons-outlined" style="padding-right: 10px">send</span>
-            <a href="#" style="color: black"><span id="nav_bar_add_box" class="material-icons-outlined"
-                                                   style="padding-right: 10px">add_box</span></a>
-            <span class="material-icons-outlined" style="padding-right: 10px">explore</span>
-            <span class="material-icons-outlined" style="padding-right: 10px">favorite_border</span>
-
-            <div class="dropdown">
-                <a id="dropdownMenuLink" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <div class="box" style="width: 27px; height: 27px" style="padding-right: 10px">
-                        <img class="profile"
-                             src="{% get_media_prefix %}{{ user.profile_image }}"
-                        >
-                    </div>
-                </a>
-
-                <ul class="dropdown-menu" style="left: -158px">
-                    <li><a class="dropdown-item" href="/content/profile">프로필</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="/user/logout">로그아웃</a></li>
-                </ul>
-            </div>
+            <span class="material-symbols-outlined" style="padding-right: 10px">home</span>
+            <span class="material-symbols-outlined">send</span>
+            <span id="nav_var_add_box" class="material-symbols-outlined" style="padding-right: 10px">add_box</span>
+            <span class="material-symbols-outlined">explore</span>
+            <span class="material-symbols-outlined">favorite</span>
         </div>
 
     </div>
 </nav>
+
 
 <div style="display: flex; flex-direction: row;text-align: center; justify-content: center;padding-top: 60px; background-color:#FAFAFA">
     <!-- 피드박스 -->
@@ -115,80 +87,57 @@
                 <div style="display: flex;flex-direction: row; align-items: center; margin: 20px">
                     <div class="box" style="width: 35px; height: 35px">
                         <img class="profile"
-                             src="{% get_media_prefix %}{{ feed.profile_image }}">
+                             src="{{ feed.profile_image }}">
                     </div>
                     <div>
-                        {{ feed.nickname }}
+                        {{ feed.user_id }}
                     </div>
                 </div>
                 <div><img loading="lazy" style="width: 100%"
-                          src="{% get_media_prefix %}{{ feed.image }}">
+                          src="{{ feed.image }}">
                 </div>
                 <div style="margin: 0 20px;display: flex; flex-direction: row; justify-content: space-between">
-                    <div style="display: flex; flex-direction: row; justify-content: space-between">
-                        <div>
-                            <span id="favorite_{{ feed.id }}" feed_id="{{ feed.id }}"
-                                  class="favorite material-icons-outlined"
-                                  style="color: red;cursor: pointer">{% if feed.is_liked %}
-                                favorite{% else %}favorite_border{% endif %}
-                            </span>
-                        </div>
-                        <div>
-                            <span class="material-icons-outlined">mode_comment</span>
-                        </div>
-                        <div>
-                            <span class="material-icons-outlined">send</span>
-                        </div>
+                    <div>
+                        <span class="material-symbols-outlined">favorite</span>
+                        <span class="material-symbols-outlined">mode_comment</span>
+                        <span class="material-symbols-outlined">send</span>
                     </div>
                     <div>
-                        <span id="bookmark_{{ feed.id }}" feed_id="{{ feed.id }}"
-                              class="bookmark material-icons-outlined" style="cursor: pointer">{% if feed.is_marked %}
-                            bookmark{% else %}bookmark_border{% endif %}
-                        </span>
+                        <span class="material-symbols-outlined">bookmark</span>
                     </div>
                 </div>
 
                 <div style="margin: 0 20px;text-align: left;font-size: 14px"> 춘식이 <b>외 {{ feed.like_count }}명</b>이
                     좋아합니다.
                 </div>
-                <div style="margin: 0 20px;text-align: left;font-size: 16px">
-                    <b>{{ feed.nickname }}</b>{{ feed.content }}
-                </div>
-                <div id="reply_list_{{ feed.id }}">
-                    {% for reply in feed.reply_list %}
-                        <div style="margin: 0 20px;text-align: left;font-size: 14px">
-                            <b>{{ reply.nickname }}</b>{{ reply.reply_content }}
-                        </div>
-                    {% endfor %}
-                </div>
+                <div style="margin: 0 20px;text-align: left;font-size: 16px"> {{ feed.user_id }}
+                    <b>{{ feed.content }}</b></div>
+                <div style="margin: 0 20px;text-align: left;font-size: 14px"><b>aaaaa</b>댓글1</div>
+                <div style="margin: 0 20px;text-align: left;font-size: 14px"><b>aaaaa</b>댓글2</div>
 
                 <div style="display:flex;flex-direction: row;align-items: center; border-top: solid 1px gray ">
-                    <input id="reply_{{ feed.id }}" type="text" class="form-control"
+                    <input type="text" class="form-control"
                            style="box-shadow: none; border: none; outline: none"
                            placeholder="댓글 달기..">
-                    <div feed_id="{{ feed.id }}" class="upload_reply"
-                         style="width: 50px; color: cornflowerblue; font-weight: bold">
-                        게시
-                    </div>
                 </div>
             </div>
         {% endfor %}
 
     </div>
+    <!-- 여기까지 피드박스 -->
     <!-- 팔로우 추천 -->
-    <div style="width: 400px; height: 1000px; position: fixed;left: 62%; z-index: 0">
+    <div style="width: 400px; height: 1000px; position: fixed;left: 62%">
         <div style="display: flex;flex-direction: row; align-items: center; margin: 20px">
             <div class="box" style="width: 70px; height: 70px">
                 <img class="profile"
-                     src="{% get_media_prefix %}{{ user.profile_image }}"
-                >
+                     src="data:image/png;base64,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">
             </div>
             <div style="margin-left: 10px; text-align: left">
                 <div style="font-weight: bold">
-                    {{ user.nickname }}
+                    id3300
                 </div>
                 <div style="color: gray">
-                    {{ user.name }}
+                    name
                 </div>
             </div>
         </div>
@@ -308,7 +257,6 @@
     </div>
     <!-- 여기까지 팔로우 추천 -->
 </div>
-
 {# 첫 번째 모달 #}
 <div id="first_modal" class="modal_overlay">
     <div class="modal_window">
@@ -319,7 +267,7 @@
                 새 이미지 업로드
             </div>
             <div style="width: 40px; background-color: gray">
-                <span class="modal_colse material-icons-outlined">close</span>
+                <span class="material-symbols-outlined">close</span>
             </div>
         </div>
 
@@ -340,7 +288,7 @@
                 새 이미지 업로드
             </div>
             <div style="width: 40px; background-color: gray">
-                <span class="modal_colse material-icons-outlined">close</span>
+                <span class="material-symbols-outlined">close</span>
             </div>
         </div>
 
@@ -350,165 +298,27 @@
             </div>
             <div style="border-left: solid 1px gray">
                 <div>
-                    <textarea id="input_feed_content" class="form-control" style="width: 276px; height: 400px"
-                              id="exampleFormControlTextarea1" rows="5"></textarea>
+                    <textarea class="form-control" style="width: 276px; height: 400px" id="exampleFormControlTextarea1" rows="5"></textarea>
                 </div>
-                <button id="feed_create_button" type="button" class="btn btn-primary" style="width: 100%">
+                <button type="button" class="btn btn-primary" style="width: 100%">
                     공유하기
                 </button>
             </div>
+
         </div>
+
     </div>
 </div>
 
 <!-- Optional JS; -->
 <script>
 
-    $(".favorite").click(function (event) {
-        let feed_id = event.target.attributes.getNamedItem('feed_id').value;
-        let favorite_id = event.target.id;
-        let favorite_text = $.trim($('#' + favorite_id).html());
-        if (favorite_text == 'favorite') {
-            $('#' + favorite_id).html('favorite_border');
-        } else {
-            $('#' + favorite_id).html('favorite');
-        }
-
-        $.ajax({
-            url: "/content/like",
-            data: {
-                feed_id: feed_id,
-                favorite_text: favorite_text,
-            },
-            method: "POST",
-            success: function (data) {
-                console.log(("성공"));
-                $("#reply_list_" + feed_id).append("<div style='margin: 0 20px;text-align: left;font-size: 14px'><b>{{ user.nickname }}</b>" + reply_content + " </div>")
-                {#location.replace('/main');#}
-            },
-            error: function (request, status, error) {
-                console.log("에러");
-            },
-            complete: function () {
-                console.log("완료");
-                $('#' + reply_id).val('');
-            }
-        });
-    })
-
-    $(".bookmark").click(function (event) {
-        let feed_id = event.target.attributes.getNamedItem('feed_id').value;
-        let bookmark_id = event.target.id;
-        let bookmark_text = $.trim($('#' + bookmark_id).html());
-        if (bookmark_text == 'bookmark') {
-            $('#' + bookmark_id).html('bookmark_border');
-        } else {
-            $('#' + bookmark_id).html('bookmark');
-        }
-
-        $.ajax({
-            url: "/content/bookmark",
-            data: {
-                feed_id: feed_id,
-                bookmark_text: bookmark_text
-            },
-            method: "POST",
-            success: function (data) {
-                console.log(("성공"));
-                $("#reply_list_" + feed_id).append("<div style='margin: 0 20px;text-align: left;font-size: 14px'><b>{{ user.nickname }}</b>" + reply_content + " </div>")
-                {#location.replace('/main');#}
-            },
-            error: function (request, status, error) {
-                console.log("에러");
-            },
-            complete: function () {
-                console.log("완료");
-                $('#' + reply_id).val('');
-            }
-        });
-    })
-
-    $('.upload_reply').click(function (event) {
-        let feed_id = event.target.attributes.getNamedItem('feed_id').value;
-        let reply_id = 'reply_' + feed_id;
-        let reply_content = $('#' + reply_id).val();
-
-        if (reply_content.length <= 0) {
-            alert("댓글을 입력하세요.");
-            return 0;
-        }
-
-        $.ajax({
-            url: "/content/reply",
-            data: {
-                feed_id: feed_id,
-                reply_content: reply_content,
-            },
-            method: "POST",
-            success: function (data) {
-                console.log(("성공"));
-                $("#reply_list_" + feed_id).append("<div style='margin: 0 20px;text-align: left;font-size: 14px'><b>{{ user.nickname }}</b>" + reply_content + " </div>")
-                {#location.replace('/main');#}
-            },
-            error: function (request, status, error) {
-                console.log("에러");
-            },
-            complete: function () {
-                console.log("완료");
-                $('#' + reply_id).val('');
-            }
-        });
-    })
-
-    $('.modal_colse').click(function () {
-        $('#first_modal').css({
-            display: 'none'
-        });
-        $(document.body).css({
-            overflowY: 'none'
-        });
-    })
-
-    let files;
-
-    $('#nav_bar_add_box').click(function () {
+    $('#nav_var_add_box').click(function () {
         $('#first_modal').css({
             display: 'flex'
         });
         $(document.body).css({
             overflowY: 'hidden'
-        });
-    });
-
-    $('#feed_create_button').click(function () {
-        alert("공유하기 누름");
-
-        let file = files[0];
-        let image = files[0].name;
-        let content = $('#input_feed_content').val();
-
-        let fd = new FormData();
-
-        fd.append('file', file);
-        fd.append('image', image);
-        fd.append('content', content);
-
-        $.ajax({
-            url: "/content/upload",
-            data: fd,
-            method: "POST",
-            processData: false,
-            contentType: false,
-            success: function (data) {
-                console.log(("성공"));
-            },
-            error: function (request, status, error) {
-                console.log("에러");
-            },
-            complete: function () {
-                console.log("완료");
-                location.replace("/main");
-            }
         });
     });
 
@@ -538,7 +348,7 @@
         e.preventDefault();
 
         e.dataTransfer = e.originalEvent.dataTransfer; //2
-        files = e.target.files || e.dataTransfer.files;
+        var files = e.target.files || e.dataTransfer.files;
 
         if (files.length > 1) {
             alert('하나만 올려라.');

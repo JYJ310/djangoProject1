@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7246699-45a4-4ae6-8cfe-cd46da106931" name="Changes" comment="2023-04-30">
+    <list default="true" id="d7246699-45a4-4ae6-8cfe-cd46da106931" name="Changes" comment="test">
+      <change beforePath="$PROJECT_DIR$/.idea/djangoProject1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/djangoProject1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/star/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/star/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,18 +21,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
   }
-}</component>
+}]]></component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -50,31 +53,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/PycharmProjects/SNS-Team-Project&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/user/PycharmProjects/SNS-Team-Project",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;,
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite",
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\user\PycharmProjects\djangoProject1\media" />
       <recent name="C:\Users\user\PycharmProjects\djangoProject1\templates" />
       <recent name="C:\Users\user\PycharmProjects\djangoProject1\templates\star" />
     </key>
@@ -128,25 +129,7 @@
       <workItem from="1680792775480" duration="311000" />
       <workItem from="1680823890829" duration="673000" />
       <workItem from="1680825048360" duration="43000" />
-      <workItem from="1680825100897" duration="4020000" />
-      <workItem from="1680830145606" duration="334000" />
-      <workItem from="1680837778278" duration="7017000" />
-      <workItem from="1680959684085" duration="5124000" />
-      <workItem from="1681026628948" duration="8848000" />
-      <workItem from="1681100335156" duration="606000" />
-      <workItem from="1681104926331" duration="911000" />
-      <workItem from="1681187959304" duration="9888000" />
-      <workItem from="1681697364019" duration="7206000" />
-      <workItem from="1681966450083" duration="5516000" />
-      <workItem from="1681975743202" duration="146000" />
-      <workItem from="1681975912837" duration="74000" />
-      <workItem from="1681976005243" duration="85000" />
-      <workItem from="1681976102967" duration="7535000" />
-      <workItem from="1681987744867" duration="14194000" />
-      <workItem from="1682477690641" duration="647000" />
-      <workItem from="1682562277706" duration="5553000" />
-      <workItem from="1682581453769" duration="4000" />
-      <workItem from="1682818611562" duration="9339000" />
+      <workItem from="1680825100897" duration="3089000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1680825807570</created>
@@ -155,196 +138,7 @@
       <option name="project" value="LOCAL" />
       <updated>1680825807570</updated>
     </task>
-    <task id="LOCAL-00002" summary="test">
-      <created>1680828670993</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1680828670993</updated>
-    </task>
-    <task id="LOCAL-00003" summary="test">
-      <created>1680845521638</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1680845521638</updated>
-    </task>
-    <task id="LOCAL-00004" summary="2023-04-08">
-      <created>1680963073345</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1680963073345</updated>
-    </task>
-    <task id="LOCAL-00005" summary="2023-04-09">
-      <created>1681031119029</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1681031119029</updated>
-    </task>
-    <task id="LOCAL-00006" summary="2023-04-09">
-      <created>1681038691892</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1681038691892</updated>
-    </task>
-    <task id="LOCAL-00007" summary="2023-04-09">
-      <created>1681038701041</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1681038701041</updated>
-    </task>
-    <task id="LOCAL-00008" summary="2023-04-11">
-      <created>1681220948349</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1681220948349</updated>
-    </task>
-    <task id="LOCAL-00009" summary="2023-04-11">
-      <created>1681222022752</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1681222022752</updated>
-    </task>
-    <task id="LOCAL-00010" summary="2023-04-11">
-      <created>1681223998098</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1681223998098</updated>
-    </task>
-    <task id="LOCAL-00011" summary="2023-04-11">
-      <created>1681979466590</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1681979466590</updated>
-    </task>
-    <task id="LOCAL-00012" summary="2023-04-11">
-      <created>1681979474348</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1681979474348</updated>
-    </task>
-    <task id="LOCAL-00013" summary="2023-04-11">
-      <created>1681979482301</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1681979482301</updated>
-    </task>
-    <task id="LOCAL-00014" summary="2023-04-11">
-      <created>1681979485525</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1681979485525</updated>
-    </task>
-    <task id="LOCAL-00015" summary="2023-04-11">
-      <created>1681979489093</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1681979489093</updated>
-    </task>
-    <task id="LOCAL-00016" summary="2023-04-11">
-      <created>1681979492301</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1681979492301</updated>
-    </task>
-    <task id="LOCAL-00017" summary="2023-04-11">
-      <created>1681982704313</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1681982704314</updated>
-    </task>
-    <task id="LOCAL-00018" summary="2023-04-11">
-      <created>1681982713566</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1681982713566</updated>
-    </task>
-    <task id="LOCAL-00019" summary="2023-04-11">
-      <created>1681982758470</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1681982758470</updated>
-    </task>
-    <task id="LOCAL-00020" summary="2023-04-20">
-      <created>1681998318041</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1681998318041</updated>
-    </task>
-    <task id="LOCAL-00021" summary="2023-04-20">
-      <created>1681998327890</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1681998327890</updated>
-    </task>
-    <task id="LOCAL-00022" summary="2023-04-20">
-      <created>1682002729121</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1682002729121</updated>
-    </task>
-    <task id="LOCAL-00023" summary="2023-04-20">
-      <created>1682002738006</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1682002738006</updated>
-    </task>
-    <task id="LOCAL-00024" summary="2023-04-30">
-      <created>1682818868883</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1682818868883</updated>
-    </task>
-    <task id="LOCAL-00025" summary="2023-04-30">
-      <created>1682827214084</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1682827214084</updated>
-    </task>
-    <task id="LOCAL-00026" summary="2023-04-30">
-      <created>1682834178241</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1682834178241</updated>
-    </task>
-    <task id="LOCAL-00027" summary="2023-04-30">
-      <created>1682834867883</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1682834867883</updated>
-    </task>
-    <task id="LOCAL-00028" summary="2023-04-30">
-      <created>1682834939335</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1682834939335</updated>
-    </task>
-    <option name="localTasksCounter" value="29" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,11 +157,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
-    <MESSAGE value="2023-04-08" />
-    <MESSAGE value="2023-04-09" />
-    <MESSAGE value="2023-04-11" />
-    <MESSAGE value="2023-04-20" />
-    <MESSAGE value="2023-04-30" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023-04-30" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>
