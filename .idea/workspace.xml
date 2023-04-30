@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7246699-45a4-4ae6-8cfe-cd46da106931" name="Changes" comment="2023-04-20">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4bcec2e9-6533-49ea-a293-4aed3e80d412.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4bcec2e9-6533-49ea-a293-4aed3e80d412.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/content/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/content/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/content/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/content/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/content/profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/star/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/star/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,7 +149,10 @@
       <workItem from="1681975912837" duration="74000" />
       <workItem from="1681976005243" duration="85000" />
       <workItem from="1681976102967" duration="7535000" />
-      <workItem from="1681987744867" duration="12226000" />
+      <workItem from="1681987744867" duration="14194000" />
+      <workItem from="1682477690641" duration="647000" />
+      <workItem from="1682562277706" duration="5553000" />
+      <workItem from="1682581453769" duration="4000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1680825807570</created>
@@ -295,7 +301,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681998327890</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="2023-04-20">
+      <created>1682002729121</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1682002729121</updated>
+    </task>
+    <task id="LOCAL-00023" summary="2023-04-20">
+      <created>1682002738006</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1682002738006</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

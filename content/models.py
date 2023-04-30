@@ -11,7 +11,7 @@ class Feed(models.Model):
 class Like(models.Model):
     feed_id = models.IntegerField(default=0)
     email = models.EmailField(default='')
-    is_like = models.BooleanField(default=True)
+    is_like = models.BooleanField(default=False)
 
 
 class Reply(models.Model):
@@ -23,4 +23,4 @@ class Reply(models.Model):
 class Bookmark(models.Model):
     feed_id = models.IntegerField(default=0)
     email = models.EmailField(default='')
-    id_marked = models.BooleanField(default=True)
+    is_marked = models.BooleanField(default=False)
