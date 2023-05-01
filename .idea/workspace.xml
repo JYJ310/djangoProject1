@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="904b5fbf-4289-4cba-87d4-7787a77bb2b2" name="Changes" comment="2023-04-30" />
+    <list default="true" id="904b5fbf-4289-4cba-87d4-7787a77bb2b2" name="Changes" comment="2023-05-01&#10;ALLOWED_HOSTS">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,28 +57,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/user/PycharmProjects/djangoProject1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.editor",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/PycharmProjects/djangoProject1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\PycharmProjects\djangoProject1" />
@@ -115,7 +119,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d7246699-45a4-4ae6-8cfe-cd46da106931" name="Changes" comment="" />
+      <changelist id="904b5fbf-4289-4cba-87d4-7787a77bb2b2" name="Changes" comment="2023-04-30" />
       <created>1679378035744</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -154,6 +158,10 @@
       <workItem from="1682581453769" duration="4000" />
       <workItem from="1682838357775" duration="31000" />
       <workItem from="1682838406470" duration="420000" />
+      <workItem from="1682847454741" duration="3107000" />
+      <workItem from="1682922606853" duration="34000" />
+      <workItem from="1682923145343" duration="26000" />
+      <workItem from="1682924419394" duration="395000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1680825807570</created>
@@ -407,7 +415,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682846148394</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="2023-04-30">
+      <created>1682846605896</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1682846605896</updated>
+    </task>
+    <task id="LOCAL-00038" summary="2023-05-01&#10;ALLOWED_HOSTS">
+      <created>1682924509848</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1682924509849</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,6 +465,7 @@
     <MESSAGE value="2023-04-11" />
     <MESSAGE value="2023-04-20" />
     <MESSAGE value="2023-04-30" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023-04-30" />
+    <MESSAGE value="2023-05-01&#10;ALLOWED_HOSTS" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023-05-01&#10;ALLOWED_HOSTS" />
   </component>
 </project>
