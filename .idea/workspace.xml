@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="904b5fbf-4289-4cba-87d4-7787a77bb2b2" name="Changes" comment="2023-05-01" />
+    <list default="true" id="904b5fbf-4289-4cba-87d4-7787a77bb2b2" name="Changes" comment="2023-05-01">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +23,9 @@
         <option value="Freeze Requirements File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="origin/master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -157,7 +162,7 @@
       <workItem from="1682847454741" duration="3107000" />
       <workItem from="1682922606853" duration="34000" />
       <workItem from="1682923145343" duration="26000" />
-      <workItem from="1682924419394" duration="1708000" />
+      <workItem from="1682924419394" duration="1995000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1680825807570</created>
@@ -453,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682925900777</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="2023-05-01">
+      <created>1682926161656</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1682926161656</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
