@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="904b5fbf-4289-4cba-87d4-7787a77bb2b2" name="Changes" comment="2023-05-01">
+    <list default="true" id="904b5fbf-4289-4cba-87d4-7787a77bb2b2" name="Changes" comment="2023-05-03">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject1/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,14 +166,7 @@
       <workItem from="1683038797033" duration="318000" />
       <workItem from="1683043715063" duration="1214000" />
       <workItem from="1683049573119" duration="1391000" />
-      <workItem from="1683082342419" duration="67000" />
-    </task>
-    <task id="LOCAL-00001" summary="test">
-      <created>1680825807570</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1680825807570</updated>
+      <workItem from="1683082342419" duration="538000" />
     </task>
     <task id="LOCAL-00002" summary="test">
       <created>1680828670993</created>
@@ -505,7 +497,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683049955539</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="2023-05-01">
+      <created>1683082512107</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1683082512107</updated>
+    </task>
+    <task id="LOCAL-00050" summary="2023-05-03">
+      <created>1683082709951</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1683082709951</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,6 +549,7 @@
     <MESSAGE value="2023-04-30" />
     <MESSAGE value="2023-05-01&#10;ALLOWED_HOSTS" />
     <MESSAGE value="2023-05-01" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023-05-01" />
+    <MESSAGE value="2023-05-03" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023-05-03" />
   </component>
 </project>
