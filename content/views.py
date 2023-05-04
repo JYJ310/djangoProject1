@@ -14,6 +14,7 @@ from .models import Feed, Reply, Like, Bookmark
 
 class Main(APIView):
     def get(self, request):
+
         email = request.session.get('email', None)
 
         if email is None:
@@ -32,7 +33,7 @@ class Main(APIView):
             reply_object_list = Reply.objects.filter(feed_id=feed.id)
             reply_list = []
             for reply in reply_object_list:
-                user = User.objects.filter(email=reply.email).first()
+                # user = User.objects.filter(email=reply.email).first()
                 reply_list.append(dict(reply_content=reply.reply_content,
                                        nickname=user.nickname
                                        ))
