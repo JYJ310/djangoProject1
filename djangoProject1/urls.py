@@ -12,5 +12,4 @@ urlpatterns = [
     path('user/', include('user.urls'))
 ]
 
-
 urlpatterns += static(MEDIA_URL, document_root=MEDIA_ROOT)
