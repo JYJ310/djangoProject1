@@ -14,6 +14,7 @@ from .models import Feed, Reply, Like, Bookmark
 
 class Main(APIView):
     def get(self, request):
+
         email = request.session.get('email', None)
 
         if email is None:
